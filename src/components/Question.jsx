@@ -9,7 +9,7 @@ const Question = ({ index, onSelectAnswer, onSkipAnswer }) => {
         isCorrect: null
     });
 
-    let timer = 10000;
+    let timer = 60000;
     if (answer.selectedAnswer) { // if i have a selected answer, i reduce time to reveal immediately the correct answer 
         timer = 1000;
     } else if (answer.isCorrect != null) { // if i know whether the answer is correct or not, i update the timer milliseconds because that's the time it'll take until i move to the next question
